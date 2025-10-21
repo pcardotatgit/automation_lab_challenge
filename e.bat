@@ -1,0 +1,1 @@
+python z_minimum_init_appli.py

@@ -1,0 +1,31 @@
+{
+    "data": [
+        {
+            "description": "Add a single IP to the firewall IP blocking list",
+            "id": "02DHT5DT6CKL50tVu3sj7WKrOnp6GaYSt3J",
+            "module": "XDR Automation",
+            "module_instance_id": "9c99aefa-8b06-4df8-96f4-a89e3f2556ef",
+            "module_type_id": "b1600a94-3c89-50b5-8f93-f601acaf9b39",
+            "title": "W0024-ADD IP TO XDR IPv4 BLOCKING LIST",
+            "url": "/respond/trigger/9c99aefa-8b06-4df8-96f4-a89e3f2556ef/02DHT5DT6CKL50tVu3sj7WKrOnp6GaYSt3J?action-id=02DHT5DT6CKL50tVu3sj7WKrOnp6GaYSt3J&observable_type=ip&observable_value=1.2.3.4"
+        },
+        {
+            "description": "This workflow blocks the given IP address on a Cisco Meraki MX L3 outbound firewall (using the input observable as the rule's destination). Supported observable: ip\n\nDocumentation: https://ciscosecurity.github.io/sxo-05-security-workflows/workflows/0019\n\nTarget Group: Default TargetGroup\n\nTargets: Cisco Meraki\n\nSteps:\n[] Make sure the observable type provided is supported\n[] Get the Meraki API key from a global variable (optional)\n[] Loop through each organization\n[]> Check the organization is in scope\n[]> Loop through each network\n[]>> Check the network is in scope\n[]>> Get the existing L3 firewall rules\n[]>> Add the new L3 firewall rule\n[]>> Update the firewall rules",
+            "id": "02KV9B0J15E6B6E9UVc07OQDuPagYtW9pdo",
+            "module": "XDR Automation",
+            "module_instance_id": "9c99aefa-8b06-4df8-96f4-a89e3f2556ef",
+            "module_type_id": "b1600a94-3c89-50b5-8f93-f601acaf9b39",
+            "title": "*W0077-Meraki - MX - L3 Outbound Firewall BLOCK",
+            "url": "/respond/trigger/9c99aefa-8b06-4df8-96f4-a89e3f2556ef/02KV9B0J15E6B6E9UVc07OQDuPagYtW9pdo?action-id=02KV9B0J15E6B6E9UVc07OQDuPagYtW9pdo&observable_type=ip&observable_value=1.2.3.4"
+        },
+        {
+            "description": "This workflow apply an endpoint quarantine thru ISE ANC Policy. supported observable types : ip address, mac address",
+            "id": "01YD3Z1A74H553WXOpHSOD0cJVN1fw1ik0T",
+            "module": "XDR Automationr",
+            "module_instance_id": "9c99aefa-64be-4a3d-884e-d4f14e60eebc",
+            "module_type_id": "b1600a94-3c89-50b5-8f93-f601acaf9b39",
+            "title": "Cisco ISE - ERS - ANC Policy - Apply to Endpoint",
+            "url": "/respond/trigger/9c99aefa-64be-4a3d-884e-d4f14e60eebc/01YD3Z1A74H553WXOpHSOD0cJVN1fw1ik0T?observable_type=ip&observable_value=1.2.3.4&action-id=01YD3Z1A74H553WXOpHSOD0cJVN1fw1ik0T"
+        }
+    ]
+}
