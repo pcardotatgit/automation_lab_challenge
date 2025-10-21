@@ -1,9 +1,0 @@
-The infected host is : Demo_AMP_Threat_Audit
-
-1 open a cmd terminal and change directoru to the simulator directory
-2 run the simulator : type a 
-3 open a second cmd terminal and change directory to the simulator directory
-4 create a virtual environment for the student challenge : type c
-5 change to challenge directory : cd challenge
-6 create a copy of the student_challenge_original.py to challenge.py
-7 You are ready to go : run the challenge.py script : python challenge.py
