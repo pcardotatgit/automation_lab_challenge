@@ -117,7 +117,7 @@ Then install required python modules ( Windows / Mac / Linux )
 
     python z_minimum_init_appli.py
 
-## Step 7 : run the syslog server
+## Step 7 : run the simulator
 
     python simulator.py
     
