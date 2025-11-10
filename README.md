@@ -1,14 +1,18 @@
 # automation lab challenge
 
-Backend simulator for the Threat Hunting automation lab.
+ for the Threat Hunting automation lab.
 
-This application is a tiny flask API server , plus an http request client, used for REST API trainings.
+This application is a tiny REST API lab infrastructure which simulates real security solutions.
 
-The web server exposes REST APIs and JSON results. Students have to customize the http client in order to query the server and parse result.
+As student you will go to a Threat Hunting operation you have to automate in order to go as fast as possible.
 
-The server simulates a few real REST Servers.
+The Backend simulator is python flask API web server. As student you have to run python http request client which automates your operations.
 
-It is PrePackaged for windows machines to make installation very fast ( 5 Minutes )
+The web server exposes REST APIs and JSON results. As Student you have to customize the http client in order to query the API server. And you have to parse the result in order to extract malicious objects and block them.
+
+The server simulates completely some REST Security Servers from authentication and query perspective. You have to use the correct product API calls according to their documentation and the simulator answers you extact simimal answers as the real solutions.
+
+The package in this repo is PrePackaged for windows machines to make installation very fast ( less than 5 Minutes )
 
 But it Can be installed on Mac or Linux through standard python installation
 
