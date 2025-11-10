@@ -2,7 +2,7 @@
 
 This application is a tiny REST API lab infrastructure which simulates real security solutions.
 
-As student you will go to a Threat Hunting operation you have to automate in order to go as fast as possible.
+As student you will go to a Threat Hunting operations you must automate in order to go as fast as possible.
 
 The Backend simulator is python flask API web server. As student you have to run python http request client which automates your operations.
 
