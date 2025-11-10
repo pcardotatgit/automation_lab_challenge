@@ -127,6 +127,8 @@ Then install required python modules ( Windows / Mac / Linux )
 
 The principle of this lab is to run several time the **challenge.py** script. Customize and debug it until it ends with a success message.
 
+**How to do :**
+
 Open a second CMD console in the same working directory, then activate the same virtual environment again. An run the script.
 
     python challenge.py
@@ -134,3 +136,5 @@ Open a second CMD console in the same working directory, then activate the same 
 The script stop several  time at every key point of the lab.  Either to highlight some information about the APIs we use, or to ask you to fix something which doesn't work ( voluntarily ).
 
 The script tells you when you have complete the lab.
+
+As you run the script, you are supposed to see your queries in the simulator console. And you see the server replies as well.
