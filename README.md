@@ -1,6 +1,4 @@
-# automation lab challenge
-
- for the Threat Hunting automation lab.
+# Automation REST API Lab 
 
 This application is a tiny REST API lab infrastructure which simulates real security solutions.
 
