@@ -1,1 +1,1 @@
-python z_minimum_init_appli.py
+python z_init_appli.py
