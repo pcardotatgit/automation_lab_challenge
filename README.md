@@ -12,15 +12,15 @@ This application is a tiny REST API lab infrastructure which simulates real secu
 
 As student you will go to a Threat Hunting operations you must automate in order to go as fast as possible.
 
-The Backend simulator is python flask API web server. As student you have to run python http request client which automates your operations.
+The Backend simulator is a python flask API web server. As student you have to run python http request client which automates your operations.
 
 The web server exposes REST APIs and JSON results. As Student you have to customize the http client in order to query the API server. And you have to parse the result in order to extract malicious objects and block them.
 
-The server simulates completely some REST Security Servers from authentication and query perspective. You have to use the correct product API calls according to their documentation and the simulator answers you extact simimal answers as the real solutions.
+The server simulates completely some REST Security Servers from authentication and query perspective. You have to use the correct product API calls according to their documentation and the simulator replies to your API Call with the extact same answers as the real solutions.
 
-The package in this repo is PrePackaged for windows machines to make installation very fast ( less than 5 Minutes )
+The package in this repo contains some batch files for windows machines that make the installation very fast ( less than 5 Minutes )
 
-But it Can be installed on Mac or Linux through standard python installation
+But it Can be installed on Mac or Linux through standard python installation.
 
 # Installation
 
@@ -138,7 +138,7 @@ Open a second CMD console in ./your_working_directory/lab_simulator_v4.1/python_
 Then install the python virtual environment
 
 - python -m venv venv
-- for windows : type : venv\Scripts\activate for Macv and Linux type : source venv/bin/activate  
+- for windows : type : venv\Scripts\activate for Mac and Linux type : source venv/bin/activate  
 - pip install -r requirements.txt
 - start the backend challenge python script , type : python mission.py
 
