@@ -60,6 +60,7 @@ Some additional text here after that can be very long
 
 # Helper functions
 
+
 def print_missing_mission_warn(lineerror):
     print(red(f"Check and complete the #MISSIONxx at Line number --->  {lineerror}"))
     return exit()

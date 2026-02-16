@@ -1,4 +1,12 @@
-# Automation REST API Lab 
+# What do you need to know of python programming if you are a Network and Security Engineer ?
+
+The resources in this repo try to answers to this question. 
+
+This is a lab, and this is more a python lab than an automation lab. We use a security automation scenario which comes real Threat Hunting use cases in order to get familiar with python programming.
+
+The labs are python challenges. You have to make the python scripts work. But for this you have to fix a lot of programming issue we use to face when we automate Network and Security devices
+
+# A few words about the Automation REST API Lab 
 
 This application is a tiny REST API lab infrastructure which simulates real security solutions.
 
@@ -121,18 +129,52 @@ Then install required python modules ( Windows / Mac / Linux )
     
     You should see the flask console indicating you the the web server is listening on port 400
     
-# Run the HTTP Client
-
-The principle of this lab is to run several time the **challenge.py** script. Customize and debug it until it ends with a success message.
+# Install the challenge python script
 
 **How to do :**
 
-Open a second CMD console in the same working directory, then activate the same virtual environment again. An run the script.
+Open a second CMD console in ./your_working_directory/lab_simulator_v4.1/python_challenge, 
 
-    python challenge.py
+Then install the python virtual environment
+
+- python -m venv venv
+- for windows : type : venv\Scripts\activate for Macv and Linux type : source venv/bin/activate  
+- pip install -r requirements.txt
+- start the backend challenge python script , type : python mission.py
+
+The principle of the challenge is to loop on runing the ***mission.py*** script in order to see when it stop. And then fix the issue
     
-The script stop several  time at every key point of the lab.  Either to highlight some information about the APIs we use, or to ask you to fix something which doesn't work ( voluntarily ).
+The script stops a lot of times, at every key point of the lab.  Either to highlight some information about the APIs we use, or to ask you to fix something which ( voluntarily ) doesn't work. 
+
+Instructions are displayed when the script stop, And the line number where to go is displayed as well. 
+
+Instructions a name MISSIONxx, with xx the number of the mission.
+
+You have to solve 15 MISSION and a lot of common python bugs.
 
 The script tells you when you have complete the lab.
 
-As you run the script, you are supposed to see your queries in the simulator console. And you see the server replies as well.
+As you run the challenge script, you are supposed to see your API queries in the simulator console. And you see the server replies as well.
+
+For information :
+
+The new_th_mission_original.py script is the original version of the mission.py in case you need to re start from scratch
+The mission_solution.py script show the solutions. YOU ARE NOT SUPPOSED TO OPEN IT :-) ! 
+
+The infected hostname is : Demo_AMP_Threat_Audit
+
+# WHAT TO DO NEXT ?
+
+Did you make the mission.py script work ? ...
+
+If the answser is YES ... WHOAW !  CONGRATULATION !!! 
+
+Do You Want More ! ?
+
+Okay, give a try to the challenge-2.py script.   
+
+Same story... you have to make it work.  It is a little bit more complex :-)
+
+DID YOU SOLVE THE 2 CHALLENGES ??
+
+WHOAW !!!   You know what ?  You are ready to go to Network and Security Automation problems !

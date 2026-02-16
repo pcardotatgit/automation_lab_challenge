@@ -605,11 +605,12 @@ def CTR4():
     print()
     print(cyan('Threat Response POST Response - Observables',bold=True))  
     print()
-    data=json.loads(request.data)     
-    observable_value=data['value']
+    data=json.loads(request.data)  
+    print('received data :\n',data)    
+    observable_value=data[0]['value']
     print()
     print('observable_value: ',observable_value)    
-    observable_type=data['type']
+    observable_type=data[0]['type']
     print()
     print('observable_type: ',observable_type)   
     if token==CTR_TOKEN:
@@ -637,6 +638,7 @@ def CTR5():
         return render_template('13.json')
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}'  
+        
 
 @app.route("/iroh/iroh-response/respond/trigger/21bb0ed7-937c-4fc7-9338-34e05a8d6916/amp-remove-sha256-scd", methods=['POST'])
 def CTR5b():
@@ -750,27 +752,29 @@ def CTR10():
         return ('"status": "unknown"')
         
         
-@app.route("/respond/trigger/9c99aefa-8b06-4df8-96f4-a89e3f2556ef/01GWHRNGESXD03H9ZF47jbf3ZzJKez1F0Ej", methods=['POST'])
+@app.route("/iroh/iroh-response/respond/trigger/9c99aefa-8b06-4df8-96f4-a89e3f2556ef/01GWHRNGESXD03H9ZF47jbf3ZzJKez1F0Ej", methods=['POST'])
 def CTR11():
-    print(cyan("Trigger adding domain to umbrella blocking list",bold=True)) 
+    print(cyan("Trigger adding sha256 to Secure Endpoint Simple Custom Detection List\n",bold=True)) 
+    data=request.data.decode("utf-8")
+    print('JSON data :',cyan(data,bold=True))   
+    words=data.split('&')
+    observable_value=words[0].split('=')[1]
+    observable_type=words[1].split('=')[1]
     print()
-    data=json.loads(request.data)     
-    observable_value=data['value']
-    print()
-    print('observable_value: ',observable_value)    
-    observable_type=data['type']
-    print()
-    print('observable_type: ',observable_type)     
+    print('\nobservable_value: ',observable_value)    
+    print('\nobservable_type: ',observable_type)     
     if observable_type=='sha256':   
         if observable_value == "b1380fd95bc5c0729738dcda2696aa0a7c6ee97a93d992931ce717a0df523967" :   
             print(green('QUARANTINE SHA256',bold=True))
-            return ('CSE_QUARANTINE_OK')   
+            variables_sqlite_update_value('filename_isolation_status','YES')
+            return ({'status':'YES in CSE'})   
         else:
             print(red('ERROR 2',bold=True))
-            return ('"status": "error"')            
+            return ('"status": "isolation = NO"')            
     else:
         print(red('ERROR 1',bold=True))   
-        return ('"status": "error"')
+        return ('"status": "isolation = NO"')
+        
 '''
         HERE UNDER JUST SOME EXAMPLES
 '''
@@ -828,7 +832,7 @@ def not_found(error):
     
 if __name__ == "__main__":
     print()
-    print(cyan("     Automation Lab Backend Simulator v4.0 "))
+    print(cyan("     Automation Lab Backend Simulator v4.1 20260211 "))
     print()
     with open('./templates/isolation_status.txt','w') as file2:
         file2.write('0')     

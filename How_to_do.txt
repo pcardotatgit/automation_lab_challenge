@@ -1,0 +1,51 @@
+Firts install the challenge python environment
+
+We install the backend simulator :
+
+- Step 1 : install Python into your lab machine
+- Step 2 : Create a working directory and unzip the whole python scripts into it
+- Step 3 : Install the backend simulator
+- Step 3a: open a CMD terminal console into the ./your_working_directory/lab_simulator_v4.1
+- Step 3b: python -m venv venv
+- Step 3c: for windows : type : venv\Scripts\activate for Macv and Linux type : source venv/bin/activate  
+- Step 4 : pip install -r requirements.txt
+- Step 5 : start the backend simulator , type : python simulator.py
+
+At this stage the back simulator has started and you can check this in the console
+
+Then we install the challenge python script :
+
+- Step 6 : open a second CMD terminal console into the ./your_working_directory/lab_simulator_v4.1/python_challenge
+- Step 7 : python -m venv venv
+- Step 8 : for windows : type : venv\Scripts\activate for Macv and Linux type : source venv/bin/activate  
+- Step 9 : pip install -r requirements.txt
+- Step 10 : start the backend challenge python script , type : python mission.py
+
+YOUR MISSION :
+
+You have to make the whole mission.py script to work. It will break a lot of time !
+You have to follow the instruction displayed in the CMD  console and fix all the bugs !
+
+ADDITIONAL INFORMATION 
+
+The new_th_mission_original.py script is the original version of the mission.py in case you need to re start from scratch
+The mission_solution.py script show the solutions. YOU ARE NOT SUPPOSED TO OPEN IT :-) ! 
+
+The infected hostname is : Demo_AMP_Threat_Audit
+
+WHAT'S NEXT ?
+
+Did you make the mission.py script work ? ...
+
+If the answser is YES ... WHOAW !  CONGRATULATION !!! 
+
+Do You Want More ! ?
+
+Okay, give a try to the challenge-2.py script.   
+
+Same story... you have to make it work.  It is a little bit more complex :-)
+
+DID YOU SOLVE THE 2 CHALLENGES ??
+
+WHOAW !!!   You know what ?  You are ready to go to Network and Security Automation problems !
+
