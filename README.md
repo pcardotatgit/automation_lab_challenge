@@ -2,9 +2,9 @@
 
 The resources in this repo try to answers to this question. 
 
-This is a lab, and this is more a python lab than an automation lab. We use a security automation scenario which comes real Threat Hunting use cases in order to get familiar with python programming.
+This is a lab, and this is more a python lab than an automation lab. We use a security automation scenario which comes from real Threat Hunting use cases in order to get familiar with python programming.
 
-The labs are python challenges. You have to make the python scripts work. But for this you have to fix a lot of programming issue we use to face when we automate Network and Security devices
+The labs are python challenges. You have to make the python scripts work. But for this you have to solve a lot of programming missions that are missing piece of code and common issues we use to face when we automate Network and Security devices
 
 # A few words about the Automation REST API Lab 
 
@@ -142,7 +142,9 @@ Then install the python virtual environment
 - pip install -r requirements.txt
 - start the backend challenge python script , type : python mission.py
 
-The principle of the challenge is to loop on runing the ***mission.py*** script in order to see when it stop. And then fix the issue
+## Run the lab
+
+The principle of the lab is to loop on runing the ***mission.py*** script in order to see when it stop. And then fix the issue
     
 The script stops a lot of times, at every key point of the lab.  Either to highlight some information about the APIs we use, or to ask you to fix something which ( voluntarily ) doesn't work. 
 
